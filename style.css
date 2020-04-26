@@ -5,7 +5,7 @@
 
 section{width: 100%;}
 .start,.One_player,.Two_player{
-    margin: 7rem auto;
+    margin: 5rem auto;
     border: solid;
     width: 500px;
     height: 510px;
@@ -13,6 +13,7 @@ section{width: 100%;}
     background-color: #f9ca24;
     box-shadow:  0 14px 20px 9px rgba(17, 17, 17, 0.897);
 }
+.One_player,.Two_player{margin: 1rem auto;}
 .ecran{
     border: solid;
     margin: 1rem auto;
@@ -34,7 +35,7 @@ input[type=checkbox]{
 label{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin-left: 1rem;
+    margin-left: .5rem;
     margin-top: 2rem;
     padding: 1rem;
     font-size: 35px;
@@ -43,6 +44,10 @@ label{
 label:hover{
     border: dashed 2px;
     border-radius: 30%; 
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /* --------------------------one player & Two player----------------------------- */
@@ -82,8 +87,8 @@ label:hover{
 .note,.note_0{
     position: relative;
     z-index: -20;
-    top: 7.5rem;
-    left: 27rem;
+    top: 2rem;
+    left: 29rem;
     width: 200px;
     height: 80px;
     text-align: center;
@@ -93,8 +98,7 @@ label:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: turquoise;
 }
-.note{ left:1rem;}
-
+.note{left:28rem;}
 table{
     height: 400px;
     width: 420px;
@@ -116,10 +120,36 @@ tr:nth-last-of-type(2) td:last-of-type{border-right: none;}
 
 
 
+
+@media (max-width:1350px){
+    .note{left: 26.5rem;}
+    .note_0{display: 23.5rem;}
+}
+@media (max-width:1300px){
+    .note{left: 25.5rem;}
+    .note_0{left: 24.5rem;}
+}
+@media (max-width:1180px){
+    .note{left: 21.5rem;}
+    .note_0{left: 22rem;}
+}
+@media (max-width:1080px){
+    .note{left: 20.5rem;}
+    .note_0{left: 19.4rem;}
+}
+@media (max-width:980px){
+    .note{left: 15.5rem;}
+    .note_0{left: 15.4rem;}
+}
+@media (max-width:930px){
+    .note{left: 15.5rem;}
+    .note_0{left: 13.4rem;}
+}
+
 @media (max-width:858px){
     .start,.One_player,.Two_player{
         width: 400px;
-        height: 430px;
+        height: 440px;
     }
     .ecran{
         width: 360px;
@@ -139,22 +169,13 @@ tr:nth-last-of-type(2) td:last-of-type{border-right: none;}
         margin-top: 6rem;
         line-height: 40px;
     }
-    #test_0{
-        position: relative;
-        top: -39.5rem;
-        z-index: -10;
-        
-    }
-    #test_1{
-        position: relative;
-        top: -37rem;
-        left: -.2rem;
-        z-index: -10;
-        
-    }
     table{
         height: 360px;
         width: 360px;
         margin-left: 5px;
     }
+    .note{left: 4rem;}
+    .note_0{left: 4.4rem;}
+    .One_player .one_1:first-of-type{margin-left: 1rem;}
+    .Two_player .one_1:first-of-type{margin-left: 1rem;}
 }
